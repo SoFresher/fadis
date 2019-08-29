@@ -1,0 +1,460 @@
+:root{
+    --mainWhite: #f8f6f6;
+    --blue: #007bff;
+    --deepblue: #070142;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --darkred: #7e020f;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --black: #8a8a8a;
+}
+::selection {
+    color: #fff;
+    background-color: #72c02c;
+}
+html,body{
+	font-weight: 400;
+    font-size: 1rem;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #555;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: rgba(0,0,0,.7);
+    border-bottom: 2px solid #72c02d;
+}
+.header{
+	position: sticky;
+    left: 0;
+    right: 0;
+    width: 100%;
+    font-size: 0.92857rem;
+    z-index: 501;
+    top: 0;
+    background-color: #fff;
+}
+.main-home{
+    background: url(http://localhost/fadis/assets/main-image.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    min-height: calc(100vh - 60px);
+    position: relative;
+}
+.main-home:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: #bfc1c27d;
+  }
+.main-content{
+    color: var(--white);
+    padding: 0 3vw;
+}
+.cta-btn{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: var(--deepblue);
+    background: var(--yellow);
+    min-width: 10vw;
+    outline: none !important;
+    border: none;
+    transition: all .5s ease-in-out;
+}
+.cta-btn:hover{
+    background: var(--deepblue);
+    color: var(--white);
+}
+/*nav{
+	background-color: #fff;
+}*/
+.text-align-center{
+	text-align: center;
+}
+.btn-outline-black{
+	color: #000;
+    border-color: #000;
+    background-color: #ffffff7d;
+    border-radius: 50px !important;
+    font-size: 0.92857rem !important;
+    cursor: pointer;
+    padding: 10px 25px;
+}
+#learn-btn:hover{
+	background-color: #000 !important;
+	color:  #fff !important;
+}
+.drop-d{
+	background-color: #fff;
+	list-style: none;
+	top: 60px;
+	position: absolute;
+	width:150px;
+    padding: 5px;
+    border-top: 2px solid green;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    /*display: none;*/
+}
+.bg-title{
+	font-weight: 700;
+    font-family: poppins;
+    letter-spacing: 6px;
+}
+.blue-opacity{
+	background-image: url('http://localhost/fadis/assets/what_we_do.jpg');
+    background-repeat: round;
+    background-position: right;
+	/*height: 80px;*/
+	color: #fff;
+}
+.purple-opacity{
+	background-image: url('http://localhost/fadis/assets/bus.png');
+    background-repeat: round;
+    background-position: right;
+	/*height: 80px;*/
+	color: #fff;
+}
+.green-opacity{
+	background-image: url('http://localhost/fadis/assets/pro2.png');
+    background-repeat: round;
+    background-position: right;
+	/*height: 80px;*/
+	color: #fff;
+}
+.blue-opacity::after{
+	content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #00bed6e6 !important;
+}
+.purple-opacity::after{
+	content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(154, 105, 203, 0.9) !important;
+}
+.green-opacity::after{
+	content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(24, 186, 155, 0.9) !important;
+}
+.btn-overlay-blue{
+	color: #00bed6e6 !important;
+    background-color: #ffffff;
+    border-radius: 50px !important;
+    font-size: 0.92857rem !important;
+    border: 1px solid #00bed6e6 !important;
+    font-weight: bolder;
+}
+.btn-overlay-purple{
+	color: rgba(154, 105, 203, 0.9);
+    background-color: #ffffff;
+    border-radius: 50px !important;
+    font-size: 0.92857rem !important;
+    border: 1px solid rgba(154, 105, 203, 0.9);
+    font-weight: bolder;
+}
+.btn-overlay-green{
+	color: rgba(24, 186, 155, 0.9) !important;
+    background-color: #ffffff;
+    border-radius: 50px !important;
+    font-size: 0.92857rem !important;
+    border: 1px solid rgba(24, 186, 155, 0.9) !important;
+    font-weight: bolder;
+}
+
+.overlay-inner{
+	z-index: 3;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    margin: 30px;
+}
+.overlay-icon{
+	width: 5rem;
+    height: 5rem;
+    font-size: 2.14286rem;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    padding: 10px;
+}
+.btn-overlay-blue:hover{
+	background-color: #26c6dabf;
+	color: #fff !important;
+}
+.btn-overlay-purple:hover{
+	background-color: #ab47bc7a;
+	color: #fff !important;
+}
+.btn-overlay-green:hover{
+	background-color: #66bb6aa1;
+	color: #fff !important;
+}
+.no-padding{
+	padding: 0 !important;
+}
+.no-margin{
+	margin: 0 !important;
+}
+.abt-img{
+    border-radius: 26px 52px 78px 13px;
+    height: 100%;
+    height: 100%;
+  }
+.abt-img img{
+    border-top-left-radius: 1900px;
+    border-top-right-radius: 1300px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 1600px;
+    width: 100%;
+    height: 100%;
+}
+/*.abt-img::after{
+	content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    border-top-left-radius: 1900px;
+    border-top-right-radius: 1300px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 1600px;
+    background: rgba(76, 175, 80, 0.22);
+}*/
+.gr-border{
+	content: '';
+    display: block;
+    width: 45px;
+    height: 6px;
+    background: #72c02d;
+    border-radius: 3px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: .5rem;
+}
+.bg-img-typewrite{
+	/*height: calc(100vh - 60px);*/
+    background-image: url(http://localhost/fadis/assets/lean.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 100px;
+}
+.bg-img-typewrite::after{
+	content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000bf !important;
+}
+.bg-img-typewrite::before{
+	content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.typewrite-overlay{
+	position: relative;
+}
+.shadow-service{
+	background-color: #fff;
+	padding: 2.14286rem !important;
+	box-shadow: 0 20px 25px -1px rgba(0, 0, 0, 0.09);
+	margin-right: 3px;
+	margin-left: 3px;
+	margin-bottom: 30px;
+	border-radius: .25rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, .h7, h1, h2, h3, h4, h5, h6{
+	line-height: 1.4;
+}
+.shadow-service h3{
+	font-size: 20px;
+	font-weight: 500;
+	margin: 0;
+}
+.shadow-service p{
+	font-size: 15px;
+}
+.shadow-service i{
+	color: #72c02d;
+	font-size: 30px;
+	margin-right: 5px;
+}
+.gr-thread{
+	height: 1px;
+	width: 10%;
+	background-color: #72c02d;
+	margin-bottom: .5rem;
+}
+#scrollTop{
+    display: inline-block;
+    position: fixed;
+    bottom: 35px;
+    right: 15px;
+    width: 3.57143rem;
+    height: 3.57143rem;
+    font-size: 2.14286rem;
+    color: #72c02d;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    padding: 10px;
+    background-color: #fff;
+    z-index: 3;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+}
+#scrollTop:hover{
+	background-color: #72c02d;
+	color: #fff;
+}
+#scrollTop i{
+	margin-left: 8px;
+	position: fixed;
+
+}
+.project-box{
+	padding: 30px;
+	border-radius: 3px;
+	background-color: transparent;
+}
+.project-box h3{
+	font-size: 20px;
+	font-weight: 500;
+	margin: 0;
+}
+.project-box p{
+	font-size: 15px;
+}
+.join{
+	background-image: url(http://localhost/fadis/assets/pattern5.png);
+	padding: 10px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: green;
+	color: #fff !important;
+}
+.join::after{
+	background-color: green;
+}
+.contact-section{
+	padding-top: 4.28571rem !important;
+    padding-bottom: 4.28571rem !important;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+.request-form input[type=text], .request-form input[type=email], .request-form select{
+	border-radius: 0;
+    background-color: transparent !important;
+}
+.request-form input[type=submit]{
+	border-radius: 0;
+	/*background-color: transparent;*/
+}
+.contact-section nav ul{
+	padding: 0;
+}
+.contact-section nav ul li{
+	list-style: none;
+	border-bottom: 1px dotted rgba(255, 255, 255, 0.1);
+	padding: 0.71429rem 0;
+	color: #555;
+}
+.contact-section nav ul li a{
+	color: #555;
+}
+
+.contact-section nav ul li:hover{
+	color: #fff;
+}
+.contact-section nav ul li a:hover{
+	color: #fff;
+}
+.contact-section nav ul li i{
+    float: right;
+    font-size: 12px;
+}
+.add-icon{
+	width: 2.14286rem;
+    height: 2.14286rem;
+    font-size: 0.92857rem;
+    color: #fff;
+    background-color: #ffffff1a;
+    position: relative;
+    text-align: center;
+    margin-right: 10px;
+}
+.add-icon i{
+    margin-top: 10px;
+}
+p {
+    line-height: 30px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-size: 14px;
+    color: var(--black);
+}
+.address{
+	background-image: url(http://localhost/fadis/assets/world-map.png);
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff08;
+}
+footer{
+	background-color: #000;
+	padding-top: 1rem;
+	padding-bottom: 1rem; 
+}
+.inline-list{
+	display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.inline-list li{
+	margin-right: 8px;
+	margin-left: 8px
+}
+.inline-list li a{
+	color: inherit;
+}

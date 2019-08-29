@@ -1,0 +1,507 @@
+body{
+	color: #222;
+}
+.add-bar{
+	position: relative;
+    z-index: 20;
+    font-size: 13px;
+    background-color: #002e5b;
+    color: #fff;
+    padding: 10px 0px 10px 0px;
+    margin: 0 !Important;
+}
+.icon{
+	color: yellow;
+}
+.header{
+	/*position: fixed;*/
+    background: #fff !Important;
+    overflow: hidden;
+	position: relative;
+	box-shadow: 0px 0px 2px 0px rgb(0, 0, 0);
+	/*padding-left: 50px !Important;*/
+}
+.sticky {
+	top: 0;
+    bottom: auto;
+    position: fixed;
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+    transition: all 0.4s ease;
+    z-index: 1000;
+    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.2);
+	/* max-height: 100px; */
+}
+.logo a img{
+	max-width: inherit;
+}
+.logo{
+	padding: 16px 0px 0px 0px;
+}
+.menu li{
+	list-style: none;
+	font-size: 16px;
+	font-weight: bold;
+	float: left;
+	margin-right: 8px;
+	letter-spacing: -0.04em;
+	padding: 5px 10px;
+	color: #002e5b;
+}
+.menu{
+    bottom: auto;
+    top: auto;
+    left: auto;
+    right: auto;
+}
+.main-content{
+    padding: 30px 30px 100px;
+    background-image: url(http://localhost/fadis/assets/lean.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.map-section{
+    /*padding: 50px 20px;*/
+    /*background-image: url(http://localhost/fadis/assets/lean.jpg);*/
+    width: 100%;
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat no-repeat;*/
+    /*background-position: center center;*/
+    position: relative;
+}
+.map-section::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #72c02d17;
+}
+.d-block{
+	max-height: 100%;
+}
+.yellow-blck{
+	background-color: #efc100;
+	padding: 16px 9px;
+}
+	.box {
+		position: relative;
+		float: left;
+		width: 300px;
+		height: 300px;
+		margin: 0px 20px 20px 0px;
+        padding: 0;
+        text-align: center;
+	}
+	.image{
+		display: block;
+        width: 100%;
+        height: 100%;
+	}
+	.last {
+		margin-right: 0;
+	}
+	.caption {
+		position: absolute;
+		background: #002e5be6;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 15%;
+		padding: 5%;
+		color: #fff;
+	}
+
+
+.full-height {
+    height: 100%;
+}
+.no-padding{
+	padding: 0 !Important;
+}
+/*.slider{
+	height: 549px;
+}*/
+.particles{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+@media (max-width: 768px){
+	.add-bar{
+		text-align: center;
+		line-height: 2em;
+	}
+	.logo{
+		text-align: center ;
+	}
+    .yellow-blck div span{
+    	margin: 0px !Important;
+        font-size: 13px !Important;
+    }
+    .slider{
+    	height: 300px !Important;
+    }
+    #myLinks{
+    	text-align: center;
+    	float: none !Important;
+	}
+	.boxen{
+		text-align: center;
+    }
+    .box{
+        text-align: center;
+    }
+    .contact-details{
+    	margin: 20px 0px 0px !Important;
+    }
+	iframe{
+        width:  100%  !Important;
+	}
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+
+/* Style navigation menu links */
+/*.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}*/
+
+/* Style the hamburger menu */
+/*.toggler {
+	display: none;
+}
+
+ Style the active link (or home/logo) 
+.active {
+  background-color: #4CAF50;
+  color: white;
+}*/
+.inner-row{
+	background-color: #d8d8d8;
+	padding: 30px 0px 50px;
+}
+.partner-img{
+	padding: 0px;
+	height: 65px;
+	text-align: center;
+}
+.partner-img img{
+	height: 100%;
+	text-align: center;
+}
+h3{
+	/*margin-bottom: 23px;*/
+    font-size: 28px;
+    letter-spacing: -0.06em;
+    line-height: 36px;
+    padding: 17px 0 0;
+}
+.yellow-border{
+	content: '';
+    display: block;
+    width: 35px;
+    height: 6px;
+    background: #fde428;
+    border-radius: 3px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.after-pat{
+	position: relative;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f2f2f2;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: poppins;
+}
+.custom-text h3{
+	font-size: 18px;
+	color: #002e5b;
+	line-height: 22px;
+	text-align: left;
+	font-family:Montserrat;
+	font-weight:400;font-style:normal;
+	font-weight:700
+}
+.custom-link{
+	font-size: 12px; 
+	font-family: 'arial black',sans-serif;
+}
+.img-prd{
+	height:auto;
+	max-width: 100%;
+	vertical-align: top;
+}
+.call-back{
+	position: relative;
+    padding: 29px;
+    background-color: #695b8a !important;
+    color: #ffffff;
+}
+input[type=text], input[type=email], input[type=password], input[type=date], .custom-file label{
+	/*background-color: rgba(255,255,255,0);
+    border: 2px solid #f6f6f6;*/
+    /*border-radius: 0;
+    color: #fff;*/
+    font-size: 14px;
+    resize: none;
+}
+textarea{
+    background-color: rgba(255,255,255,0) !important;
+    border: 1px solid #ced4da !important;
+    border-radius: 3px !important;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+    padding: 14px 20px !important;
+    margin: 0 0 14px;
+    outline: 0;
+    resize: none;
+    line-height: 17px !important;
+}
+/*select{
+	background-color: #ccc7cc !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+    padding: 14px 20px !important;
+    margin: 0 0 14px;
+    outline: 0;
+    resize: none;
+    line-height: 17px !important;
+    height: 50px !important;
+}*/
+option{
+	padding: 8px;
+}
+input[type=submit], input[type=reset]{
+	/*background-color: #f6f6f6;*/
+    border-width: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    /*color: #222;*/
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2.9px;
+    text-transform: uppercase;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 26px;
+    margin-top: 22px;
+    display: inline-block;
+}
+.contact-box{
+	background-color: #77c3ec;
+	border-radius: 5px;
+	padding: 15px;
+    box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.2), 0 -1px 5px 0 rgba(0,0,0,0.1);
+/*    margin-left: 20px*/
+}
+.arrow-down{
+	width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -4px;
+}
+.contact-details{
+    background-color: rgba(0,46,91,0.9);
+    color: #fff;
+    padding: 10px 10px 10px 20px;
+    font-family: Poppins;
+    font-size: 14px;
+    margin-left: 20px;
+}
+.contact-details ul li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+.contact-details ul li .text{
+	font-weight: 500;
+    overflow: hidden;
+    padding: 1px 0px 0px;
+}
+.contact-details ul li .icon{
+	float: left;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgb(253, 228, 40);
+    margin: 0px 10px 0px 0px;
+}
+#fst{
+	margin-top: 20px;
+}
+.social li{
+	list-style: none;
+	float: left;
+	margin-right: 20px;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: #fff;
+
+}
+.social li i{
+    font-size: 25px;
+    color: #29446c;
+    margin-left: 12px;
+    vertical-align: -webkit-baseline-middle;
+    margin-top: 7px;
+}
+.main-reg{
+    padding: 10px 40px;
+    background: #77c3ecd1;
+    color: #FFF;
+    text-shadow: none;
+    box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.2), 0 -1px 5px 0 rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+.input-group-addon {
+    padding: 13px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #72c02d;
+    border: 1px solid #72c02d;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+}
+.input-group{
+	margin-bottom: 8px;
+}
+span.input-group-addon i {
+    color: #fff;
+    font-size: 17px;
+    /*margin-right: 5px;*/
+}
+.required{
+	color: red;
+	font-weight: 700px;
+}
+.main-reg {
+	margin-bottom: 20px;
+}
+.header-title{
+    height: 300px;
+    width: 100%;
+    background-image: url(http://localhost/fadis/assets/bout.jpg);
+    background-size: cover;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    /*min-height: calc(90vh - 60px);*/
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*padding-left: 50px;*/
+    text-align: center;
+}
+.header-title::before{
+	content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+.header-title h1{
+	font-family: poppins;
+    color: #eee;
+}
+.no-margin{
+	margin: 0 !Important;
+}
+.about-left li, .mission li{
+    margin-bottom: 1rem!important;
+    display: flex!important;
+    font-size: 0.92857rem !important;
+    /*letter-spacing: 2px;*/
+    word-spacing: 5px;
+    font-size: 14px;
+    color: var(--black);
+}
+/*.about-left li i{
+    margin-right: 0.71429rem !important;
+    margin-top: 0.35714rem !important;
+    color: #72c02c !important;
+}*/
+.mission{
+    background-color: #f7f7f7 !important;
+}
+.icon_bull{
+    margin-right: 0.71429rem !important;
+    margin-top: 0.35714rem !important;
+    color: #72c02c !important;
+}
+.border-left{
+    border-left: 1px solid #eee;
+}
+.mission .col-md-4{
+    padding-left: 2.85714rem;
+    padding-right: 2.85714rem;
+    padding-top: 3.14286rem;
+    padding-bottom: 3.14286rem;
+}
+.mission .gr-circle{
+    color: #fff;
+    background-color: #72c02c;
+    width: 3.92857rem;
+    height: 3.92857rem;
+    font-size: 1.57143rem;
+    border-width: 1px;
+    border-style: solid;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+}
+.mission .gr-circle i{
+    position: relative;
+    top: 25%;
+    display: block;
+
+}
+figcaption{
+    padding-left: 0.71429rem !important;
+    padding-right: 0.71429rem !important;
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background-color: rgba(114, 192, 45, 0.61);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before,.custom-radio .custom-control-input:checked~.custom-control-label::before {
+     background-color: #72c02d !important; 
+}
